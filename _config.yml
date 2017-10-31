@@ -1,2 +1,2 @@
-baseurl: whattodo
+baseurl:
 exclude: ['README.MD', '_site']
