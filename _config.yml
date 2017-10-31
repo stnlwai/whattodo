@@ -1,2 +1,2 @@
-baseurl: stnlwai.github.io/whattodo/
+baseurl: whattodo/
 exclude: ['README.MD', '_site']
