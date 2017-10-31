@@ -2,3 +2,14 @@
 layout: default
 title: Dining
 ---
+
+<article class="px3 py4">
+<h1 class="h4 mb4">Dining</h1>
+  <dl class="clearfix">
+    <dl>
+        {% for post in site.categories.Dining %}
+             <dt class="col col-10 h2 mb1">{{ post.title }}</dt><dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd><dd class="col col-12 m0 mb4 theme2-divider">{{ post.description }}</dd>
+        {% endfor %}
+    </dl>
+  </dl>
+</article>
