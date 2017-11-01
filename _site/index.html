@@ -35,6 +35,7 @@ limitations under the License.
 <script custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js" async=""></script>
 <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
 <script custom-element="amp-call-tracking" src="https://cdn.ampproject.org/v0/amp-call-tracking-0.1.js" async=""></script>
+<script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async=""></script>
 
 
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CLora%7CLato" rel="stylesheet">
@@ -58,6 +59,17 @@ limitations under the License.
     <ul class="list-reset m0 p0 ampstart-label">
           <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="/index.html">Home</a></li>
           <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="/dining.html">Dining</a></li>
+          <li class="ampstart-nav-item ampstart-nav-dropdown relative ">
+            <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+              <section>
+                <header>Dining</header>
+                <ul class="ampstart-dropdown-items list-reset m0 p0">
+                    <li class="ampstart-dropdown-item"><a href="/dining.html#bars" class="text-decoration-none">Bars & Bistros</a></li>
+                    <li class="ampstart-dropdown-item"><a href="/dining.html#cafes" class="text-decoration-none">CAFÉS</a></li>
+                </ul>
+              </section>
+            </amp-accordion>
+          </li>
           <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="/shopping.html">Shopping</a></li>
           <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="/beauty.html">Health & Beauty</a></li>
           <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="/tours.html">Tours & Activities</a></li>
