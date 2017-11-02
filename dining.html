@@ -10,7 +10,7 @@ title: Dining
         {% for post in site.categories.Bars %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}">{{ post.tel }}<br>{{ post.description }} </dd>
+        <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
     <h2 id="cafes" class="h1 my4">CAFÉS</h2>
