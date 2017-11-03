@@ -5,116 +5,116 @@ title: Dining
 
 <article class="px3 py4">
 <h1 class="h1 my4">DINING GUIDE</h1>
-<h2 id="bars" class="ampstart-subtitle h4 mb4">BARS AND BISTROS</h2>
+<h2 id="bars" class="h6 block caps">BARS &amp; BISTROS</h2>
     <dl class="clearfix">
         {% for post in site.categories.Bars reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-        <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}">{{ post.tel }}</a><br>{{ post.description }} </dd>
+            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}" class="ampstart-subtitle">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
-    <h2 id="cafes" class="ampstart-subtitle h4 mb4">CAFÉS</h2>
+    <h2 id="cafes" class="h6 block caps">CAFÉS</h2>
     <dl class="clearfix">
-        {% for post in site.categories.Cafe %}
+        {% for post in site.categories.Cafe reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-            <dd class="col col-12 m0 mb4 theme2-divider">{{ post.description }}</dd>
+            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}" class="ampstart-subtitle">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
-    <h2 class="ampstart-subtitle h4 mb4">CHINESE</h2>
+    <h2 id="chinese" class="h6 block caps">CHINESE</h2>
     <dl class="clearfix">
-        {% for post in site.categories.Chinese %}
+        {% for post in site.categories.Chinese reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-            <dd class="col col-12 m0 mb4 theme2-divider">{{ post.description }}</dd>
+            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}" class="ampstart-subtitle">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
-    <h2 class="ampstart-subtitle h4 mb4">CURRY HOUSE</h2>
+    <h2 id="curry" class="h6 block caps">CURRY HOUSE</h2>
     <dl class="clearfix">
-        {% for post in site.categories.Curry %}
+        {% for post in site.categories.Curry reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-            <dd class="col col-12 m0 mb4 theme2-divider">{{ post.description }}</dd>
+            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}" class="ampstart-subtitle">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
-    <h2 class="ampstart-subtitle h4 mb4">FINE DINING &amp; RESORT DINING</h2>
+    <h2 id="dining" class="h6 block caps">FINE DINING &amp; RESORT DINING</h2>
     <dl class="clearfix">
-        {% for post in site.categories.Dining %}
+        {% for post in site.categories.Dining reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-            <dd class="col col-12 m0 mb4 theme2-divider">{{ post.description }}</dd>
+            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}" class="ampstart-subtitle">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
-    <h2 class="ampstart-subtitle h4 mb4">FISH AND CHIPS</h2>
+    <h2 id="chips" class="h6 block caps">FISH &amp; CHIPS</h2>
     <dl class="clearfix">
-        {% for post in site.categories.Chips %}
+        {% for post in site.categories.Chips reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-            <dd class="col col-12 m0 mb4 theme2-divider">{{ post.description }}</dd>
+            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}" class="ampstart-subtitle">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
-    <h2 class="ampstart-subtitle h4 mb4">FRENCH</h2>
+    <h2 id="french" class="h6 block caps">FRENCH</h2>
     <dl class="clearfix">
-        {% for post in site.categories.French %}
+        {% for post in site.categories.French reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-            <dd class="col col-12 m0 mb4 theme2-divider">{{ post.description }}</dd>
+            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}" class="ampstart-subtitle">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
-    <h2 class="ampstart-subtitle h4 mb4">INTERNATIONAL</h2>
+    <h2 id="international" class="h6 block caps">INTERNATIONAL</h2>
     <dl class="clearfix">
-        {% for post in site.categories.International %}
+        {% for post in site.categories.International reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-            <dd class="col col-12 m0 mb4 theme2-divider">{{ post.description }}</dd>
+            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}" class="ampstart-subtitle">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
-    <h2 class="ampstart-subtitle h4 mb4">JAPANESE RESTAURANT</h2>
+    <h2 id="japanese" class="h6 block caps">JAPANESE RESTAURANT</h2>
     <dl class="clearfix">
-        {% for post in site.categories.Japanese %}
+        {% for post in site.categories.Japanese reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-            <dd class="col col-12 m0 mb4 theme2-divider">{{ post.description }}</dd>
+            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}" class="ampstart-subtitle">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
-    <h2 class="ampstart-subtitle h4 mb4">PHILIPINO</h2>
+    <h2 id="philipino" class="h6 block caps">PHILIPINO</h2>
     <dl class="clearfix">
-        {% for post in site.categories.Philipino %}
+        {% for post in site.categories.Philipino reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-            <dd class="col col-12 m0 mb4 theme2-divider">{{ post.description }}</dd>
+            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}" class="ampstart-subtitle">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
-    <h2 class="ampstart-subtitle h4 mb4">TAKEAWAY</h2>
+    <h2 id="takeaway" class="h6 block caps">TAKEAWAY</h2>
     <dl class="clearfix">
-        {% for post in site.categories.Takeaway %}
+        {% for post in site.categories.Takeaway reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-            <dd class="col col-12 m0 mb4 theme2-divider">{{ post.description }}</dd>
+            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}" class="ampstart-subtitle">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
-    <h2 class="ampstart-subtitle h4 mb4">STEAKHOUSES</h2>
+    <h2 id="steak" class="h6 block caps">STEAKHOUSES</h2>
     <dl class="clearfix">
-        {% for post in site.categories.Steak %}
+        {% for post in site.categories.Steak reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-            <dd class="col col-12 m0 mb4 theme2-divider">{{ post.description }}</dd>
+            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}" class="ampstart-subtitle">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
-    <h2 class="ampstart-subtitle h4 mb4">THAI</h2>
+    <h2 id="thai" class="h6 block caps">THAI</h2>
     <dl class="clearfix">
-        {% for post in site.categories.Thai %}
+        {% for post in site.categories.Thai reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-            <dd class="col col-12 m0 mb4 theme2-divider">{{ post.description }}</dd>
+            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}" class="ampstart-subtitle">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
-    <h2 class="ampstart-subtitle h4 mb4">VIETNAMESE</h2>
+    <h2 id="vietnamese" class="h6 block caps">VIETNAMESE</h2>
     <dl class="clearfix">
-        {% for post in site.categories.Vietnamese %}
+        {% for post in site.categories.Vietnamese reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
-            <dd class="col col-12 m0 mb4 theme2-divider">{{ post.description }}</dd>
+            <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}" class="ampstart-subtitle">{{ post.tel }}</a><br>{{ post.description }} </dd>
         {% endfor %}
     </dl>
 
