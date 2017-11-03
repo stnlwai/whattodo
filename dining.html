@@ -7,7 +7,7 @@ title: Dining
 <h1 class="h4 mb4">DINING GUIDE</h1>
 <h2 id="bars" class="h1 my4">BARS AND BISTROS</h2>
     <dl class="clearfix">
-        {% for post in site.categories.Bars %}
+        {% for post in site.categories.Bars reversed %}
             <dt class="col col-10 h2 mb1">{{ post.title }}</dt>
             <dd class="col col-2 m0 mb1 self-center right-align">{{ post.rating }}</dd>
         <dd class="col col-12 m0 mb4 theme2-divider">Tel: <a href="tel:{{ post.tel }}">{{ post.tel }}</a><br>{{ post.description }} </dd>
